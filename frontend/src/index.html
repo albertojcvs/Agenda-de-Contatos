@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Cotatos</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Contatos</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="search-box">
+                <input id="searchBoxInput" type="text" placeholder="Digite para pesquisar...">
+            </div>
+            <div class="add-button-container">
+                <button id="addContactButton" class="add-button"><img src="" alt=""> Novo Contato</button>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <ul id="contactList" class="contacts-list"></ul>
+        </div>
+    </main>
+    <section id="form">
+        <form action=""">
+            <div class=" form-header">
+            <p>Contato</p>
+            <button id="closeFormButton"><img src="" alt=""></button>
+            </div>
+            <div class="form-body">
+                <input name-input type="text" autocomplete="off" name="nome" placeholder="Nome">
+                <input whatsapp-input type="text" autocomplete="off" name="whatsapp" placeholder="WhatsApp">
+                <input instagram-input type="text" autocomplete="off" name="instagram" placeholder="Instagram">
+                <button id="saveContactButton">Salvar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

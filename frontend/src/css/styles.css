@@ -1,0 +1,247 @@
+header {
+  background-color: #5f0f40;
+}
+header .container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+header .container h1 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  letter-spacing: 0.2rem;
+  padding: 15px;
+}
+
+main .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.contacts-list {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  }
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+
+  background-color: #eee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact-card .contact-card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid black;
+
+  padding:10px 0px 10px 0;
+}
+
+.contact-card .contact-card-header p {
+  font-size: 1.8em;
+  letter-spacing: 0.15rem;
+  text-align: center;
+}
+.contact-card .contact-card-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.contact-card .contact-card-body .social-media {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.contact-card .contact-card-body .social-media p {
+  font-size: 1.6em;
+  color: #5f0f40;
+  margin-right: 5px;
+}
+
+.contact-card .contact-card-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-card .contact-card-footer button {
+  width: 108px;
+  padding: 5px;
+
+  margin-top: 10px;
+
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.contact-card .contact-card-footer #deleteButton {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.contact-card .contact-card-footer #deleteButton:hover {
+  background-color: rgba(255, 0, 0, 0.85);
+}
+.contact-card .contact-card-footer #deleteButton:active {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.contact-card .contact-card-footer #editButton {
+  /* background-color: rgba(red, green, blue, alpha); */
+  opacity: 0.8;
+}
+.contact-card .contact-card-footer #editButton:hover {
+  background-color: grey;
+}
+.contact-card .contact-card-footer #editButton:active {
+  opacity: 0.85;
+}
+
+section .container {
+  max-width: 1580vw;
+  margin: 0 auto;
+
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+section .container .search-box input {
+  width: 300px;
+  padding: 8px 10px;
+  border-radius: 20px;
+  border: 0.08rem solid black;
+  font-size: 1rem;
+  color: darkcyan;
+  margin-right: 5px;
+  background-color: #eee;
+}
+
+section .container .search-box button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0.08rem solid black;
+}
+
+section .container .add-button-container button {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 0.05rem solid black;
+}
+section .container .add-button-container button img {
+  width: 30px;
+  height: 30px;
+}
+section .container .add-button-container button:hover,
+section .container .search-box button:hover {
+  background-color: #80808011;
+}
+
+section .container .add-button-container button:active,
+section .container .search-box button:active {
+  background-color: #80808000;
+}
+
+#form{
+  /* display: none; */
+  
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  
+  border: 1px solid black;
+  border-radius: 5px;
+  
+  
+  height: 350px;
+  width: 400px;
+  
+  opacity: 0;
+  z-index: -1;;
+
+  transition: opacity 300ms linear  ;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+form .form-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+form .form-header p{
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+form .form-header button{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+}
+form .form-header button img{
+  width: 35px;
+  height: 35px;
+}
+form .form-header button:hover{
+  background-color: grey;
+}
+
+form .form-body{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+form .form-body input{
+  padding: 10px;
+  
+  margin-top: 12px;
+
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  
+  border: 1px solid black;
+  border-radius: 5px;
+}
+form .form-body button{
+  padding: 10px;
+  
+  margin-top: 40px;
+
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+
+  background-color: rgba(67, 185, 41,0.8);
+
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+form .form-body button:hover{
+  background-color: rgba(67, 185, 41,1);
+}
